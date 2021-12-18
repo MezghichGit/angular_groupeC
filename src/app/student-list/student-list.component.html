@@ -1,3 +1,19 @@
 <h2 align="center">Composant Student List</h2>
 
 <h4>Nombre d'étudiants : {{studentNumber}}</h4>
+
+
+<h4>Noms des étudiants</h4>
+
+
+<ul>
+  <li *ngFor="let name of names">{{name|uppercase}}</li>
+</ul>
+
+<table align="center" border="1">
+  <tr><td>Nom</td><td>Age</td></tr>
+ <tr *ngFor="let myStudent of myStudents">
+   <td>{{myStudent.getNom()}}</td>
+   <td>{{myStudent.getAge()}}</td>
+ </tr>
+</table>
