@@ -7,6 +7,8 @@ import { StudentListComponent } from './student-list/student-list.component';
 import { AddDrPipe } from './add-dr.pipe';
 import { FirstLetterUpperPipe } from './first-letter-upper.pipe';
 import { ListEquipeComponent } from './list-equipe/list-equipe.component';
+import { AddEquipeComponent } from './add-equipe/add-equipe.component';
+import { NavabarComponent } from './navabar/navabar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ListEquipeComponent } from './list-equipe/list-equipe.component';
     StudentListComponent,
     AddDrPipe,
     FirstLetterUpperPipe,
-    ListEquipeComponent
+    ListEquipeComponent,
+    AddEquipeComponent,
+    NavabarComponent
   ],
   imports: [
     BrowserModule,
