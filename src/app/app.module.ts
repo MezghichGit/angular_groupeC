@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { AddDrPipe } from './add-dr.pipe';
 import { FirstLetterUpperPipe } from './first-letter-upper.pipe';
+import { ListEquipeComponent } from './list-equipe/list-equipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentListComponent,
     AddDrPipe,
-    FirstLetterUpperPipe
+    FirstLetterUpperPipe,
+    ListEquipeComponent
   ],
   imports: [
     BrowserModule,
