@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { EquipeService } from '../services/equipe.service';
 @Component({
   selector: 'app-list-equipe',
   templateUrl: './list-equipe.component.html',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListEquipeComponent implements OnInit {
 
-  constructor() { }
+   equipes: any;
+  constructor(private service : EquipeService) { }
 
   ngOnInit(): void {
+    this.service.getEquipes().subscribe(
+      data =>{
+            //console.log(data);
+            this.equipes = data;
+      }
+    );
   }
 
 }

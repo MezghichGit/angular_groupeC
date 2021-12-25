@@ -1,2 +1,11 @@
 
 <h1 align="center">Liste des équipes</h1>
+
+<table align="center" border="1" class="table">
+  <tr><td>Nom</td><td>Age</td></tr>
+ <tr *ngFor="let equipe of equipes">
+   <td>{{equipe.id}}</td>
+   <td>{{equipe.name}}</td>
+   <td>{{equipe.country}}</td>
+ </tr>
+</table>
