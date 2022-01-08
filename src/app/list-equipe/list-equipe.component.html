@@ -2,10 +2,12 @@
 <h1 align="center">Liste des équipes de la base Mongo DB</h1>
 
 <table align="center" border="1" class="table">
-  <tr><td>Nom</td><td>Age</td></tr>
+  <tr><th>ID</th><th>Nom</th><th>Country</th><th>Suppression</th><th>Modification</th></tr>
  <tr *ngFor="let equipe of equipes">
    <td>{{equipe.id}}</td>
    <td>{{equipe.name}}</td>
    <td>{{equipe.country}}</td>
+   <td><button (click)="deleteEquipe(equipe)" class="btn btn-danger">Supprimer</button></td>
+   <td><button (click)="updateEquipe(equipe)" class="btn btn-warning">Modifier</button></td>
  </tr>
 </table>

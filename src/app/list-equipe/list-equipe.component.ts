@@ -18,5 +18,20 @@ export class ListEquipeComponent implements OnInit {
       }
     );
   }
-
+  deleteEquipe(myObj) {
+    //console.log(this.provider);
+    this.service.deleteEquipe(myObj).subscribe(response => {
+    console.log(response);
+    this.refreshListEquipes();
+    })
+    }
+    refreshListEquipes(){
+      this.service.getEquipes().subscribe(
+        data =>{
+              //console.log(data);
+              this.equipes = data;
+        }
+      );
+    }
+    updateEquipe(equipe){}
 }

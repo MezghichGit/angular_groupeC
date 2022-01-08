@@ -1,5 +1,12 @@
-<h1 align="center">Hello Angular</h1>
-
-<app-student-list></app-student-list>
-<app-list-equipe></app-list-equipe>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Groupe C</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav">
+  <a class="nav-item nav-link" routerLink="/listEquipe" routerLinkActive="active">Liste Equipe</a>
+  <a class="nav-item nav-link" routerLink="/addEquipe" routerLinkActive="active">Ajouter Equipe</a>
+  </div>
+  </div>
+  </nav>
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+  <router-outlet></router-outlet>
 

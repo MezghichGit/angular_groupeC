@@ -9,6 +9,7 @@ import { FirstLetterUpperPipe } from './first-letter-upper.pipe';
 import { ListEquipeComponent } from './list-equipe/list-equipe.component';
 import { AddEquipeComponent } from './add-equipe/add-equipe.component';
 import { NavabarComponent } from './navabar/navabar.component';
+import { UpdateEquipeComponent } from './update-equipe/update-equipe.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavabarComponent } from './navabar/navabar.component';
     FirstLetterUpperPipe,
     ListEquipeComponent,
     AddEquipeComponent,
-    NavabarComponent
+    NavabarComponent,
+    UpdateEquipeComponent
   ],
   imports: [
     BrowserModule,
