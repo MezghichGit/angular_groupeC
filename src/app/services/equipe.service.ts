@@ -17,17 +17,17 @@ export class EquipeService {
   createEquipe(myform) {
     this.equipe = {
     'name': myform.value.equipeName,
-    'country': myform.value.equipeEmail,
+    'country': myform.value.equipeCountry,
     }
     return this.service.post(this.equipeurl, this.equipe);
     }
 
     updateEquipe(myObj) {
-    return this.service.put(this.equipeurl + '/' + myObj['id'], myObj);
+    return this.service.put(this.equipeurl + '/' + myObj['_id'], myObj);
     }
     deleteEquipe(myObj) {
-      console.log("Delete");
-      return this.service.delete(this.equipeurl + '/' + myObj['id'], myObj)
+      console.log(myObj['_id']);
+      return this.service.delete(this.equipeurl + '/' + myObj['_id'], myObj)
       }
       getEquipe(id) {
       return this.service.get(this.equipeurl + '/' + id)

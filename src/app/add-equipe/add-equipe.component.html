@@ -1,1 +1,11 @@
-<p>add-equipe works!</p>
+<form #myform="ngForm" (ngSubmit)="createEquipe(myform)">
+  <div class="form-group">
+    <label for="equipeName">Equipe Name </label>
+    <input ngModel name="equipeName" size="20" type="text" class="form-control" id="equipeName" />
+  </div>
+  <div class="form-group">
+    <label for="equipeCountry">Equipe Country </label>
+    <input ngModel name="equipeCountry" size="20" type="text" class="form-control" id="equipeCountry" />
+  </div>
+  <button class="btn btn-primary">Ajouter</button>
+</form>

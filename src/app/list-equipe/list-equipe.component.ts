@@ -13,7 +13,6 @@ export class ListEquipeComponent implements OnInit {
   ngOnInit(): void {
     this.service.getEquipes().subscribe(
       data =>{
-            //console.log(data);
             this.equipes = data;
       }
     );
@@ -21,7 +20,6 @@ export class ListEquipeComponent implements OnInit {
   deleteEquipe(myObj) {
     //console.log(this.provider);
     this.service.deleteEquipe(myObj).subscribe(response => {
-    console.log(response);
     this.refreshListEquipes();
     })
     }

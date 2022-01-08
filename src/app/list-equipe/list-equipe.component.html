@@ -4,7 +4,7 @@
 <table align="center" border="1" class="table">
   <tr><th>ID</th><th>Nom</th><th>Country</th><th>Suppression</th><th>Modification</th></tr>
  <tr *ngFor="let equipe of equipes">
-   <td>{{equipe.id}}</td>
+   <td>{{equipe._id}}</td>
    <td>{{equipe.name}}</td>
    <td>{{equipe.country}}</td>
    <td><button (click)="deleteEquipe(equipe)" class="btn btn-danger">Supprimer</button></td>
