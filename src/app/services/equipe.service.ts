@@ -27,7 +27,7 @@ export class EquipeService {
     }
     deleteEquipe(myObj) {
       console.log(myObj['_id']);
-      return this.service.delete(this.equipeurl + '/' + myObj['_id'], myObj)
+      return this.service.delete(this.equipeurl + '/' + myObj['_id'])
       }
       getEquipe(id) {
       return this.service.get(this.equipeurl + '/' + id)

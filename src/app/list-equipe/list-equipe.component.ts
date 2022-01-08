@@ -20,6 +20,7 @@ export class ListEquipeComponent implements OnInit {
   deleteEquipe(myObj) {
     //console.log(this.provider);
     this.service.deleteEquipe(myObj).subscribe(response => {
+
     this.refreshListEquipes();
     })
     }
